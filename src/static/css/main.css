@@ -1,0 +1,9 @@
+body {
+    background-color: green;
+}
+
+body {
+    color: aqua;
+    display:flex;
+    font-weight: bold;
+}
