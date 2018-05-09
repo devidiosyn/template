@@ -15,6 +15,6 @@ $.path.tasks.forEach(function (taskPath) {
 })
 
 $.gulp.task('default', $.gulp.series(
-    $.gulp.parallel('pug','css'),
+    $.gulp.parallel('pug','css','scripts','scripts:lib'),
     $.gulp.parallel('watch','serve')
 ))

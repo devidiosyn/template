@@ -1,9 +1,8 @@
-body {
-    background-color: green;
+.slider-item {
+    background-color: #ccc;
+    width:500px;
+    height: 200px;
+    padding: 20px;
 }
 
-body {
-    color: whitesmoke;
-    display:flex;
-    font-weight: bold;
-}
+@import "libs.css"
