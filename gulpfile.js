@@ -15,11 +15,11 @@ $.path.tasks.forEach(function (taskPath) {
 })
 
 $.gulp.task('default', $.gulp.series(
-    $.gulp.parallel('pug','css','scripts','scripts:lib','img:dev','svg'),
+    $.gulp.parallel('pug','sass','scripts','scripts:lib','img:dev','svg'),
     $.gulp.parallel('watch','serve')
 ))
 
 $.gulp.task('build', $.gulp.series(
-    $.gulp.parallel('pug','css','scripts','scripts:lib','img:build','svg'),
+    $.gulp.parallel('pug','sass','scripts','scripts:lib','img:build','svg'),
     $.gulp.parallel('watch','serve')
 ))

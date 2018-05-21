@@ -1,7 +1,8 @@
 module.exports = function () {
-    $.gulp.task('css', function () {
-        return $.gulp.src('src/static/css/main.css')
+    $.gulp.task('sass', function () {
+        return $.gulp.src('src/static/sass/main.scss')
         .pipe($.gp.sourcemaps.init())
+        .pipe($.gp.sass())
         .pipe($.gp.autoprefixer({
             browsers: ['last 2 versions']
         }))
