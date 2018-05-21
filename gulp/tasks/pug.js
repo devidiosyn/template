@@ -4,6 +4,8 @@ module.exports = function () {
         .pipe($.gp.pug({
             pretty : true
         }))
+        .pipe($.gp.plumber())
+        .pipe($.gp.notify())
         .pipe($.gulp.dest('build'))
         .on('end', $.bs.reload);
     });
