@@ -20,6 +20,6 @@ $.gulp.task('default', $.gulp.series(
 ))
 
 $.gulp.task('build', $.gulp.series(
-    $.gulp.parallel('pug','css','scripts','scripts:lib','img:build'),
+    $.gulp.parallel('pug','css','scripts','scripts:lib','img:build',),
     $.gulp.parallel('watch','serve')
 ))
